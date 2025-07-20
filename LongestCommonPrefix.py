@@ -5,15 +5,18 @@ class Solution(object):
         :rtype: str
         """
 
-        prefix = []
+        prefix = strs[0]
 
-        for i in range(len(strs)):
-            for c1, c2 in zip(str[i], str[i+1]):
-                if c1==c2:
-                    prefix.append(c1)
-                else:
-                    break
-            return ''.join(prefix)
+        for s in strs[1:]:
+            while not s.startswith(prefix):
+                prefix = prefix[:-1]
+                if not prefix:
+                    return ""
+                
+
+        return prefix
+
+        
 
 
         
