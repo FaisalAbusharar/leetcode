@@ -18,12 +18,8 @@ class Solution(object):
 
         
 
-
-        
-
-
-
-
 sol = Solution()
 print(sol.longestCommonPrefix(["flower", "flow", "flight"]))
 # print(sol.longestCommonPrefix(["racecar", "car", "dog"]))
+
+
